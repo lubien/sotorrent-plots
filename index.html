@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--<script src="js/raphael-2.1.4.min.js"></script>-->
+    <!--<script src="js/justgage.js"></script> -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script> 
+    <script src="https://code.highcharts.com/modules/data.src.js"></script>
+    <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/offline-exporting.js"></script>
+    <!--<script src="js/custom.js"></script>-->
+    <script src="index.js"></script>
+    <meta charset="utf-8" />
+    <title>Waste Water Management Design Exercise</title>
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/highcharts.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+</head>
+
+<body>
+
+    <div id="scatter2">
+    </div>
+
+    <div id="scatter">
+    </div>
+
+    <div id="onlybody_barchart">
+    </div>
+
+    <div id="daysuntilsolved_barchart">
+    </div>
+
+    <div id="streak_barchart">
+    </div>
+
+    <div id="masterDiv">
+        <h2>Design Objectives</h2>
+        <div id="tabs">
+            <ul>
+                <li>
+                    <a href="#tab-1">Line Graph</a>
+                </li>
+                <li>
+                    <a href="#tab-2">Bar Graph</a>
+                </li>
+                <li>
+                    <a href="#tab-3">Objective View</a>
+                </li>
+            </ul>
+            <div id="tab-1">
+                <div id="objective_line">
+                </div>
+            </div>
+            <div id="tab-2">
+                <div id="objective_bar"></div>
+            </div>
+            <div id="tab-3">
+                <div id="obj_view"></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="selector">
+            <div id="exiting" class="category on">
+                <h3>Design Cost Breakdown</h3>
+            </div>
+            <div id="entering" class="category off">
+                <h3>Parameter Variations</h3>
+            </div>
+        </div>
+        <div id="containerBar" style="min-width: 310px; height: 450px; margin: 0 auto"></div>
+        <div id="table_div" style="min-width: 310px; height: 450px; margin: 0 auto">
+        </div>
+    </div>
+</body>
+
+</html>
